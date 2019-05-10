@@ -1,0 +1,3 @@
+1Connected to the PostgreSQL server successfully.
+DERROR: duplicate key value violates unique constraint "people_pkey"
+,  Detail: Key (user_id)=(6) already exists.

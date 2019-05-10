@@ -13,5 +13,16 @@ repositories {
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     compile'postgresql:postgresql:9.1-901-1.jdbc4'
+    
+   // testImplementation 'org.mockito:mockito-core:2.7.22'
+    testImplementation 'org.mockito:mockito-core:2.23.4'
 
+}
+jar{
+manifest{
+    attributes 'Main-Class':'Main'
+}
+    from{
+        configurations.compile.collect{it.isDirectory()?it:zipTree(it)}
+    }
 }
