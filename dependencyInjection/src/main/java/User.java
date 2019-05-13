@@ -1,31 +1,28 @@
 public class User {
 private String lastName;
 private String firstName;
-    public User(String firstName, String lastName) {
-        this.firstName = firstName;
+//    public User(String firstName, String lastName) {
+//        this.firstName = firstName;
+//        this.lastName = lastName;
+//
+//    }
+public void setFirstName(String firstName) {
+    this.firstName = firstName;
+}
+
+    public void setLastName(String lastName) {
         this.lastName = lastName;
-
     }
-    public User(){
 
-    }
     public String getFirstName() {
-        return this.firstName;
+
+    return this.firstName;
     }
 
     public String getLastName() {
         return this.lastName;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
 
-    public static void main(String[] args){
-
-    }
 }
