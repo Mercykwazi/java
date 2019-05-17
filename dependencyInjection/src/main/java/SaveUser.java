@@ -3,9 +3,9 @@ import java.sql.SQLException;
 import java.sql.PreparedStatement ;
 
 public class SaveUser {
-private Database db;
+    private Database db;
     public void saveItems(int id,String firstName,String lastName,Database db) {
-      this.db=db;
+        this.db=db;
         try {
             Connection conn = null;
             Connection stmnt =db.connect();
@@ -16,11 +16,9 @@ private Database db;
             sql.setString(3,lastName);
             sql.executeUpdate();
             sql.close();
+
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
-    }
-    public static void main(String[] args){
-
     }
 }

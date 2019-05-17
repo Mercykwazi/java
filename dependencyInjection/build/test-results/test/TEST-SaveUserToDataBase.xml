@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="SaveUserToDataBase" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-05-10T13:03:54" hostname="tcgpc1-HP-250-G5-Notebook-PC" time="0.3">
+<testsuite name="SaveUserToDataBase" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-05-17T07:46:30" hostname="tcgpc1-HP-250-G5-Notebook-PC" time="0.838">
   <properties/>
-  <testcase name="saveUser" classname="SaveUserToDataBase" time="0.3"/>
+  <testcase name="saveUser" classname="SaveUserToDataBase" time="0.805"/>
+  <testcase name="saveUser2" classname="SaveUserToDataBase" time="0.032"/>
   <system-out><![CDATA[Connected to the PostgreSQL server successfully.
+ERROR: duplicate key value violates unique constraint "people_firstname_key"
+  Detail: Key (firstname)=(Noel) already exists.
+Connected to the PostgreSQL server successfully.
 ERROR: duplicate key value violates unique constraint "people_pkey"
   Detail: Key (user_id)=(6) already exists.
 ]]></system-out>

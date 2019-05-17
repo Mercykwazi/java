@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id "org.springframework.boot" version "2.1.5.RELEASE"
 }
 
 version '1.0-SNAPSHOT'
@@ -13,11 +14,11 @@ repositories {
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     compile'postgresql:postgresql:9.1-901-1.jdbc4'
-    
-   // testImplementation 'org.mockito:mockito-core:2.7.22'
+    //classpath "org.springframework.boot:spring-boot-gradle-plugin:2.1.5.RELEASE"
     testImplementation 'org.mockito:mockito-core:2.23.4'
 
 }
+// apply plugin: "org.springframework.boot"
 jar{
 manifest{
     attributes 'Main-Class':'Main'

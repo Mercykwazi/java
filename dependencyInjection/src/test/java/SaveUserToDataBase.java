@@ -7,19 +7,10 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
-import org.mockito.runners.MockitoJUnitRunner;
 
-
-//import static junit.framework.TestCase.assertTrue;
-//import static org.mockito.Mockito.*;
-//import static org.mockito.Mockito.mock;
-//
-//import static org.mockito.Mockito.*;
-@RunWith(MockitoJUnitRunner.class)
 public class SaveUserToDataBase {
     @InjectMocks
     public Database dbConnection;
@@ -38,7 +29,12 @@ public class SaveUserToDataBase {
     @Test
     public void saveUser()  {
        SaveUser savingUser=new SaveUser();
-     savingUser.saveItems(6,"Noel","Maseko",dbConnection);
+     savingUser.saveItems(88,"Noel","Maseko",dbConnection);
+    }
+    @Test
+    public void saveUser2(){
+        SaveUser savingTheUser= new SaveUser();
+        savingTheUser.saveItems(6,"thirthy","three",dbConnection);
     }
 
 }
