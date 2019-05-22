@@ -1,9 +1,10 @@
 package com.mercy;
+import java.io.*;
 
 public class RealBillingService implements BillingService {
     public Receipt chargeOrder(PizzaOrder order, CreditCard creditCard) {
-        CreditCardProcessor processor = new PaypalCreditCardProcessor();
-        TransactionLog transactionLog = new DatabaseTransactionLog();
+        CreditCardProcessor processor = CreditCardProcessorFactory.getInstance();
+        TransactionLog transactionLog = TransactionLogFactory.getInstance();
 
         try {
             ChargeResult result = processor.charge(creditCard, order.getAmount());
@@ -16,6 +17,5 @@ public class RealBillingService implements BillingService {
             transactionLog.logConnectException(e);
             return Receipt.forSystemFailure(e.getMessage());
         }
-
-   }
+    }
 }
