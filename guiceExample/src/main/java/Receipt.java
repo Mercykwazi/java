@@ -11,8 +11,6 @@ public class Receipt {
         return null;
     }
 
-
-
     public boolean hasSuccessfulCharge() {
         return true;
     }

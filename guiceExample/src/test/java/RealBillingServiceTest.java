@@ -10,7 +10,8 @@ public class RealBillingServiceTest extends TestCase {
 
     public void testSuccessfulCharge() {
         RealBillingService billingService
-                = new RealBillingService(processor, (TransactionLog) transactionLog);
+                = new RealBillingService(processor, transactionLog);
+       // RealBillingService billingService = new RealBillingService(processor, (TransactionLog) transactionLog);
         Receipt receipt = billingService.chargeOrder(order, creditCard);
 
         assertTrue(receipt.hasSuccessfulCharge());

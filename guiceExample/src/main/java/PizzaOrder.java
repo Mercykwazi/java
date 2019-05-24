@@ -1,14 +1,16 @@
 public class PizzaOrder {
-    private Order amount;
-PizzaOrder(Order amount){
-    this.amount=amount;
-}
+  //  private Order amount;
+
 
     public PizzaOrder(int i) {
     }
 
-
     public Order getAmount() {
-        return amount;
+        return null;
     }
+
+//
+//    public Order getAmount() {
+//        return this.amount;
+//    }
 }
