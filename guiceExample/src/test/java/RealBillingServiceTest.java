@@ -6,12 +6,10 @@ public class RealBillingServiceTest extends TestCase {
     private final CreditCard creditCard = new CreditCard("1234", 11, 2010);
 
     private final InMemoryTransactionLog transactionLog = new InMemoryTransactionLog();
-    private final FakeCreditCardProcessor processor = new FakeCreditCardProcessor();
+    private final FakeCreditCardProcessor processor = new FakeCreditCardProcessor(creditCard);
 
     public void testSuccessfulCharge() {
-        RealBillingService billingService
-                = new RealBillingService(processor, transactionLog);
-       // RealBillingService billingService = new RealBillingService(processor, (TransactionLog) transactionLog);
+        RealBillingService billingService = new RealBillingService(processor, transactionLog);
         Receipt receipt = billingService.chargeOrder(order, creditCard);
 
         assertTrue(receipt.hasSuccessfulCharge());

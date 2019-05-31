@@ -1,16 +1,14 @@
 public class PizzaOrder {
-  //  private Order amount;
+    //int amount;
 
 
     public PizzaOrder(int i) {
+     // this.amount = i;
     }
 
-    public Order getAmount() {
-        return null;
+    public Object getAmount() {
+        return 100;
     }
 
-//
-//    public Order getAmount() {
-//        return this.amount;
-//    }
+
 }

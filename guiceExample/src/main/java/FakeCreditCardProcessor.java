@@ -1,12 +1,17 @@
 public class FakeCreditCardProcessor implements CreditCardProcessor {
-    ChargeResult chargeResult=new ChargeResult();
-    public CreditCard getCardOfOnlyCharge() {
-        return null;
+    ChargeResult chargeResult=new ChargeResult(true);
+    CreditCard creditCard;
+    public FakeCreditCardProcessor(CreditCard credit){
+        this.creditCard=credit;
     }
-    public ChargeResult charge(CreditCard creditCard, Order order){
+    public CreditCard getCardOfOnlyCharge() {
+
+        return this.creditCard ;
+    }
+    public ChargeResult charge(CreditCard creditCard, Object order){
        return chargeResult;
     }
     public int getAmountOfOnlyCharge() {
-        return 1;
+        return 100;
     }
 }

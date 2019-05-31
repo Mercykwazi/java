@@ -1,3 +1,3 @@
 public interface CreditCardProcessor {
-    public ChargeResult charge(CreditCard creditCard, Order order);
+    public ChargeResult charge(CreditCard creditCard, Object order);
 }
