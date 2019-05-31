@@ -1,7 +1,9 @@
+import com.google.inject.Inject;
+
 public class RealBillingService implements BillingService {
     private final CreditCardProcessor processor;
     private final TransactionLog transactionLog;
-
+@Inject
     public RealBillingService(CreditCardProcessor processor,
                               TransactionLog transactionLog) {
         this.processor = processor;

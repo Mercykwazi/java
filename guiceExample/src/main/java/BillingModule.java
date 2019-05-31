@@ -15,5 +15,7 @@ public class BillingModule extends AbstractModule {
          * a dependency, that should be satisfied with a PaypalCreditCardProcessor.
          */
         bind(CreditCardProcessor.class).to(PaypalCreditCardProcessor.class);
+        bind(BillingService.class).to(RealBillingService.class);
+
     }
 }

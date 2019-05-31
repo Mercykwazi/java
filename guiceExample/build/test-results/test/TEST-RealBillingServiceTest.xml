@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="RealBillingServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-05-31T08:31:05" hostname="tcgpc1-HP-250-G5-Notebook-PC" time="0.01">
+<testsuite name="RealBillingServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-05-31T10:32:40" hostname="tcgpc1-HP-250-G5-Notebook-PC" time="0.006">
   <properties/>
-  <testcase name="testSuccessfulCharge" classname="RealBillingServiceTest" time="0.01"/>
+  <testcase name="testSuccessfulCharge" classname="RealBillingServiceTest" time="0.006"/>
   <system-out><![CDATA[what is result: ChargeResult@10259475
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

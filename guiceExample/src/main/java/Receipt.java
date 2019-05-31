@@ -1,8 +1,6 @@
 public class Receipt {
     ChargeResult chargeResultSuccessful= new ChargeResult(true);
-  //  @Contract(pure = true)
     public static Receipt forSuccessfulCharge(Object amount) {
-       // return Receipt.forSuccessfulCharge(receipt);
         int charged=100;
         return new Receipt();
     }
@@ -25,10 +23,7 @@ public class Receipt {
         return 100;
     }
 
-//    public Order getAmountOfCharge() {
-//
-//        return null;
-//    }
+
 
 
 }

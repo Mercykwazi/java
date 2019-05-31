@@ -4,7 +4,5 @@ public interface TransactionLog {
 
     void logConnectException(UnreachableException e);
 
-    //  void logConnectException(UnreachableException e);
 
-    // void logConnectException(UnreachableException e);
 }
