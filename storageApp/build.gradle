@@ -5,7 +5,7 @@ plugins {
 
 apply plugin: 'io.spring.dependency-management'
 
-group = 'com.mercy'
+group = 'com.mercy.storageApp'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
 
@@ -24,7 +24,7 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
+	//implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
 	implementation 'org.springframework.boot:spring-boot-starter-webflux'
 	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.0.1'
 	compileOnly 'org.projectlombok:lombok'
@@ -35,3 +35,35 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'io.projectreactor:reactor-test'
 }
+
+//buildscript {
+//	repositories {
+//		mavenCentral()
+//	}
+//	dependencies {
+//		classpath("org.springframework.boot:spring-boot-gradle-plugin:2.1.4.RELEASE")
+//	}
+//}
+//
+//apply plugin: 'java'
+//apply plugin: 'eclipse'
+//apply plugin: 'idea'
+//apply plugin: 'org.springframework.boot'
+//apply plugin: 'io.spring.dependency-management'
+//
+//bootJar {
+//	baseName = 'gs-spring-boot'
+//	version =  '0.1.0'
+//}
+//
+//repositories {
+//	mavenCentral()
+//}
+//
+//sourceCompatibility = 1.8
+//targetCompatibility = 1.8
+//
+//dependencies {
+//	compile("org.springframework.boot:spring-boot-starter-web")
+//	testCompile("junit:junit")
+//}
