@@ -7,6 +7,26 @@ import javax.persistence.*;
 @Table(name = "location")
 
 public class Location {
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setAddress1(String address1) {
+        this.address1 = address1;
+    }
+
+    public void setAddress2(String address2) {
+        this.address2 = address2;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public void setBusinessId(int businessId) {
+        this.businessId = businessId;
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
