@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2200fb1-aabd-47a8-a252-de900de3cfef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/configarations/configure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/querries/CookieUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/querries/LogIn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/application/StorageAppApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/StorageAppApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/controller/RoutesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/controller/RoutesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/querries/Locations.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/repositary/LocationRepositary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/repositary/LocationRepositary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/service/LocationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/service/LocationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/service/LocationServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/service/LocationServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/service/LocationRowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/service/LocationRowMapper.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,8 +30,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>

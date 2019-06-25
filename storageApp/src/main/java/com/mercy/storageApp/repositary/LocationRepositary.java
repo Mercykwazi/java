@@ -24,7 +24,7 @@ public class LocationRepositary implements LocationService {
     //  @Override
     public List<Location> findAll() {
        List<Location>  t =template.query("select * from location", new LocationRowMapper());
-        System.out.println("wht is t"+ t);
+        System.out.println("wht is tttttt"+ t);
         return template.query("select * from location", new LocationRowMapper());
     }
 
@@ -40,7 +40,6 @@ public class LocationRepositary implements LocationService {
                 .addValue("address2", loc.getAddress2())
                 .addValue("country", loc.getCountry())
                 .addValue("business_id", loc.getBusinessId());
-        System.out.println("this is called"+loc.getAddress2());
         template.update(sql, param, holder);
     }
 

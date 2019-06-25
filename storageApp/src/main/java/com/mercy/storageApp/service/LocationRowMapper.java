@@ -9,8 +9,10 @@ import org.springframework.jdbc.core.RowMapper;
 
 
 public class LocationRowMapper implements RowMapper<Location> {
+
     @Override
         public Location mapRow(ResultSet rs, int arg1) throws SQLException {
+
             Location loc = new Location();
             loc.setId(rs.getInt(arg1));
             loc.setAddress1(rs.getString("address1"));
