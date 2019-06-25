@@ -13,8 +13,29 @@ import java.util.List;
 
 @RestController
 public class RoutesController {
+
     @Resource
-@RequestMapping("/location")
+    LocationService locationSev;
+
+    @GetMapping("/location")
+public List<Location> getLocations() {
+    System.out.println("when this is called I will be happy");
+    return locationSev.findAll();
+}
+
+    @PostMapping(value = "/location")
+    public void postLocation(@RequestBody Location loc) {
+
+        System.out.println("what is location loc" +loc);
+        locationSev.insertLocation(loc);
+    }
+
+//@GetMapping("/location")
+//    public String testing(){
+//    System.out.println("yes this is now called");
+//    return "yes this called";
+//}
+
 //    @Autowired
 //    private LocationRepositary repository;
 //    private LocationService service;

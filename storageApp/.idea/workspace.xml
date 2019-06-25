@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2200fb1-aabd-47a8-a252-de900de3cfef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/querries/Locations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/service/LocationRowMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/service/LocationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/service/LocationServices.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/application/StorageAppApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/StorageAppApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/controller/RoutesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/controller/RoutesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/querries/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/querries/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/querries/Locations.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/repositary/LocationRepositary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/repositary/LocationRepositary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/service/LocationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/service/LocationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/service/LocationServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/service/LocationServices.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +66,7 @@
   </component>
   <component name="RunManager">
     <configuration name="StorageAppApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mercy.storageApp.application.StorageAppApplication" />
+      <option name="MAIN_CLASS_NAME" value="com.mercy.storageApp.StorageAppApplication" />
       <module name="storageApp.main" />
       <extension name="coverage">
         <pattern>
@@ -114,7 +114,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mercy/storageApp/application/StorageAppApplication.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/mercy/storageApp/StorageAppApplication.java</url>
           <line>5</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>

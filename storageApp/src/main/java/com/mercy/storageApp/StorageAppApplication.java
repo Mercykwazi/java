@@ -1,4 +1,4 @@
-package com.mercy.storageApp.application;
+package com.mercy.storageApp;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
