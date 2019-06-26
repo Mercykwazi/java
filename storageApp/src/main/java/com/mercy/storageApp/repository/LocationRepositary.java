@@ -1,8 +1,7 @@
-package com.mercy.storageApp.repositary;
+package com.mercy.storageApp.repository;
 import com.mercy.storageApp.querries.Location;
 import com.mercy.storageApp.service.LocationRowMapper;
 import com.mercy.storageApp.service.LocationService;
-import org.springframework.data.repository.CrudRepository;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.jdbc.core.namedparam.SqlParameterSource;
