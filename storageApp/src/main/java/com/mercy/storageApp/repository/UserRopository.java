@@ -21,16 +21,17 @@ public class UserRopository implements UserService {
 
 
     public void insertOwnerDetails(User user){
-        final String sql = "insert into business_owner(id, contact_name,contact_email,password)"
-       + "values(:id,:contact_name,:contact_email,:password)";
+        final String sql = "insert into business_owner(id, email,password,username)"
+       + "values(:id,:email,:password,:username)";
         // System.out.println("what is this string"+ sql);
         KeyHolder holder = new GeneratedKeyHolder();
         SqlParameterSource param = new MapSqlParameterSource()
                 .addValue("id", user.getId())
-                .addValue("contact_name",user.getUsername())
-                .addValue("contact_email", user.getEmail())
-                .addValue("password",user.getPassword());
-        System.out.println("waht"+template.update(sql, param, holder));
+                .addValue("email", user.getEmail())
+                .addValue("password",user.getPassword())
+                        .addValue("username",user.getUsername());
+
+      //  System.out.println("waht"+template.update(sql, param, holder));
 
         template.update(sql, param, holder);
     }

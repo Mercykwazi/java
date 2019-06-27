@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2200fb1-aabd-47a8-a252-de900de3cfef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/querries/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/repository/UserRopository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/service/SecurityService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/service/SecurityServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/service/UserDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/service/UserRowMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/configarations/configure.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/controller/RoutesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/controller/RoutesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/repositary/LocationRepositary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/repository/LocationRepositary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/service/LocationServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/service/UserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/repository/UserRopository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mercy/storageApp/repository/UserRopository.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
