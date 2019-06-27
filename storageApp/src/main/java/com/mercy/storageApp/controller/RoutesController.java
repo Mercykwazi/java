@@ -65,7 +65,6 @@ public String getMessage() {
         locationSev.insertLocation(loc);
     }
 
-
     @Resource
     UserService userService;
     @RequestMapping ("/login")
