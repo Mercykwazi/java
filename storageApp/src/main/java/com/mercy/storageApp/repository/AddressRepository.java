@@ -1,5 +1,6 @@
 package com.mercy.storageApp.repository;
-import com.mercy.storageApp.querries.Location;
+
+import com.mercy.storageApp.querries.Address;
 import com.mercy.storageApp.service.LocationRowMapper;
 import com.mercy.storageApp.service.LocationService;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
@@ -12,26 +13,24 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public class LocationRepositary implements LocationService {
+public class AddressRepository implements LocationService {
 
-    public LocationRepositary(NamedParameterJdbcTemplate template) {
+    public AddressRepository(NamedParameterJdbcTemplate template) {
 
         this.template = template;
     }
+
     NamedParameterJdbcTemplate template;
 
-    //  @Override
-    public List<Location> findAll() {
-       List<Location>  t =template.query("select * from location", new LocationRowMapper());
-        System.out.println("wht is tttttt"+ t);
+    public List<Address> findAll() {
+
         return template.query("select * from location", new LocationRowMapper());
     }
 
-    //       @Override
-    public void insertLocation(Location loc){
+
+    public void insertLocation(Address loc) {
         final String sql = "insert into location(id, address1 , address2,country,business_id) " +
                 "values(:id,:address1,:address2,:country,:business_id)";
-       // System.out.println("what is this string"+ sql);
         KeyHolder holder = new GeneratedKeyHolder();
         SqlParameterSource param = new MapSqlParameterSource()
                 .addValue("id", loc.getId())

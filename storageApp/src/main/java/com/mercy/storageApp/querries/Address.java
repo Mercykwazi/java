@@ -6,7 +6,7 @@ import javax.persistence.*;
 @Entity
 @Table(name = "location")
 
-public class Location {
+public class Address {
     public void setId(int id) {
         this.id = id;
     }

@@ -1,12 +1,12 @@
 package com.mercy.storageApp.service;
 
-import com.mercy.storageApp.querries.Location;
 import com.mercy.storageApp.querries.User;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.stereotype.Service;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
+@Service
 public class UserRowMapper implements RowMapper<User> {
 
     @Override
@@ -14,9 +14,9 @@ public class UserRowMapper implements RowMapper<User> {
 
         User user = new User();
         user.setId(rs.getInt("id"));
-        user.setUsername(rs.getString("contact_name"));
-        user.setEmail(rs.getString("contact_email"));
-        user.setPassword(rs.getString("password"));
+        user.setUsername(rs.getString("email"));
+        user.setEmail(rs.getString("password"));
+        user.setPassword(rs.getString("username"));
 
         return user;
     }

@@ -11,8 +11,8 @@ import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class UserRopository implements UserService {
-    public UserRopository(NamedParameterJdbcTemplate template) {
+public class UserRepository implements UserService {
+    public UserRepository(NamedParameterJdbcTemplate template) {
 
         this.template = template;
     }
