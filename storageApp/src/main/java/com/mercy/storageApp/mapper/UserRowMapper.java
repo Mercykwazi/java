@@ -1,6 +1,6 @@
-package com.mercy.storageApp.service;
+package com.mercy.storageApp.mapper;
 
-import com.mercy.storageApp.querries.User;
+import com.mercy.storageApp.queries.User;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Service;
 
@@ -13,7 +13,7 @@ public class UserRowMapper implements RowMapper<User> {
     public User mapRow(ResultSet rs, int arg1) throws SQLException {
 
         User user = new User();
-        user.setId(rs.getInt("id"));
+        user.setId(rs.getLong("id"));
         user.setUsername(rs.getString("email"));
         user.setEmail(rs.getString("password"));
         user.setPassword(rs.getString("username"));

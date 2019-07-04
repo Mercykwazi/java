@@ -1,10 +1,10 @@
 
-package com.mercy.storageApp.querries;
+package com.mercy.storageApp.queries;
 
-import javax.persistence.*;
+//import javax.persistence.*;
 
-@Entity
-@Table(name = "location")
+//@Entity
+//@Table(name = "location")
 
 public class Address {
     public void setId(int id) {
@@ -27,8 +27,8 @@ public class Address {
         this.businessId = businessId;
     }
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+  //  @Id
+  //  @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
     public int getId() {

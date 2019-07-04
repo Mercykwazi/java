@@ -1,9 +1,8 @@
 package com.mercy.storageApp.service;
 
-import com.mercy.storageApp.querries.User;
+import com.mercy.storageApp.queries.User;
 
-import java.util.List;
-
-public class UserService {
+public interface UserService {
+    User save(User user);
 
 }

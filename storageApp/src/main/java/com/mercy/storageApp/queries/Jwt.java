@@ -1,4 +1,4 @@
-package com.mercy.storageApp.querries;
+package com.mercy.storageApp.queries;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 //import io.jsonwebtoken.impl.crypto.Mac;

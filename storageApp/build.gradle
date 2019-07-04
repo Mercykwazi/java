@@ -26,19 +26,29 @@ repositories {
 dependencies {
 
 	//implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
-	implementation 'org.springframework.boot:spring-boot-starter-webflux'
-	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.0.1'
-	compileOnly 'org.projectlombok:lombok'
-	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	 implementation 'org.springframework.boot:spring-boot-starter-webflux'
+//	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.0.1'
+//	compileOnly 'org.projectlombok:lombok'
+//	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	compile("io.jsonwebtoken:jjwt:0.7.0")
-	compile "com.auth0:java-jwt:3.8.1"
+    compile("org.springframework.boot:spring-boot-starter-security")
+	compile("com.auth0:java-jwt:3.4.0")
+//	compile "com.auth0:java-jwt:3.8.1"
 	implementation('org.springframework.boot:spring-boot-starter-data-jpa')
 	implementation('org.springframework.boot:spring-boot-starter-web')
-	implementation('org.postgresql:postgresql')
-	testImplementation('org.springframework.boot:spring-boot-starter-test')
+implementation('org.postgresql:postgresql')
+//	compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.0.1'
+
+	//testImplementation('org.springframework.boot:spring-boot-starter-test')
 	runtimeOnly 'org.postgresql:postgresql'
-	annotationProcessor 'org.projectlombok:lombok'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	testImplementation 'io.projectreactor:reactor-test'
+	//annotationProcessor 'org.projectlombok:lombok'
+	//testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	//testImplementation 'io.projectreactor:reactor-test'
+	compile("org.springframework.boot:spring-boot-starter-web")
+	compile("org.springframework.boot:spring-boot-starter-actuator")
+	testCompile("org.springframework.boot:spring-boot-starter-test")
+	testCompile("junit:junit")
+
+
 }
 

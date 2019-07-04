@@ -1,25 +1,22 @@
-package com.mercy.storageApp.querries;
+package com.mercy.storageApp.queries;
 
-import javax.persistence.*;
-
-@Entity
-@Table(name = "business_owner")
 public class User {
-    private int id;
+    private long id;
     private String username;
     private String password;
     private String email;
-    private String passwordConfirm;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    public int getId() {
+    public User(){
+    }
+
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
+
     public void setEmail(String email) {
         this.email = email;
     }
@@ -39,16 +36,6 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
-
-    @Transient
-    public String getPasswordConfirm() {
-        return passwordConfirm;
-    }
-
-    public void setPasswordConfirm(String passwordConfirm) {
-        this.passwordConfirm = passwordConfirm;
-    }
-
 
     public String getEmail() {
         return email;

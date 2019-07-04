@@ -1,19 +1,19 @@
 package com.mercy.storageApp.repository;
-
-import com.mercy.storageApp.querries.Address;
-import com.mercy.storageApp.service.LocationRowMapper;
-import com.mercy.storageApp.service.LocationService;
+//
+import com.mercy.storageApp.queries.Address;
+import com.mercy.storageApp.mapper.AddressRowMapper;
+//
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Repository;
-
+//
 import java.util.List;
-
+//
 @Repository
-public class AddressRepository implements LocationService {
+public class AddressRepository {
 
     public AddressRepository(NamedParameterJdbcTemplate template) {
 
@@ -24,7 +24,7 @@ public class AddressRepository implements LocationService {
 
     public List<Address> findAll() {
 
-        return template.query("select * from location", new LocationRowMapper());
+        return template.query("select * from location", new AddressRowMapper());
     }
 
 
@@ -38,7 +38,7 @@ public class AddressRepository implements LocationService {
                 .addValue("address2", loc.getAddress2())
                 .addValue("country", loc.getCountry())
                 .addValue("business_id", loc.getBusinessId());
-        template.update(sql, param, holder);
+       // template.update(sql, param, holder);
     }
 
 }
